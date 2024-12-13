@@ -31,7 +31,7 @@ fun Route.tasksRoute(taskService: TaskService){
     }
     get {
         val tasks = taskService.getAllTasks()
-        call.respond(message = tasks.map(Task::toResponse))
+        call.respond(message = tasks.map(Task::toResponse), status = HttpStatusCode.OK)
     }
     delete("/{id}") {
         val id: String = call.parameters["id"]

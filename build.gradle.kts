@@ -33,4 +33,5 @@ dependencies {
     implementation("org.litote.kmongo:kmongo-coroutine:4.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.2")
     implementation("org.mongodb:mongodb-driver-kotlin-coroutine:4.10.1")
+    implementation("io.ktor:ktor-client-content-negotiation:3.0.2")
 }
